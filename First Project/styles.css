@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap%27%27');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1:hsl(300, 43%, 22%);
+    --color2:hsl(333, 80%, 67%);
+    --color3:hsl(303, 10%, 53%);
+    --color4:hsl(300, 24%, 96%);
+    --color5:hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.content{
+    max-width: 30em;
+}
+.content>h1{
+    font-size: 40px;
+    padding: 0em;
+    margin-right: 2em;
+}
+.content>p{
+    padding-top: 1em;
+}
+section{
+    display: grid;
+    min-height: 50vh;
+    gap: 1em;
+    align-items: center;
+}
+.top{
+    background-image: url('./images/bg-pattern-top-desktop.svg');
+    grid-template-columns: repeat(2, 1fr);
+}
+.stars{
+    padding: 0 1em;
+}
+.ratings{
+    max-width: 35em;
+    margin-left: 5em;
+    
+}
+.ratings>li{
+    padding: 1em;
+    background-color: var(--color4);
+    border-radius: 6px;
+    margin-top: 1em;
+    }
+.ratings>li:nth-child(1){
+    margin-right:8em;
+}
+.ratings>li:nth-child(2){
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.ratings>li:nth-child(3){
+    margin-left: 8em;
+}
+.bottom{
+    background-image: url('./images/bg-pattern-bottom-desktop.svg');
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--color4);
+}
+.cardheader{
+    display: flex;
+    align-items: center;
+    line-height: 2em;
+}
+.cardheader>img{
+    border-radius: 100%;
+    margin-right: 2em;
+}
+.vb{
+    color: var(--color2);
+}
+.card{
+    background-color: var(--color1);
+    padding: 1em;
+    border-radius: 6px;
+
+}
+.card>nth-child(1){
+
+}
+.card>nth-child(2){
+
+}
+.card>nth-child(3){
+
+}
+.card>*{
+    padding: 1em;
+}
+.card>p{
+    line-height: 2em;
+}
+h1{
+    color: var(--color1);
+}
+.intro{
+    color: var(--color3);
+}
+.ratings{
+    color: var(--color1);
+    list-style: none;
+}
+.content>*{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+@media screen and (max-width:375px){
+}
